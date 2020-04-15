@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validaition practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/49746dcb37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+        #form {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .input {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px, 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        .phone {
+            width: 15.5%;
+            padding: 12px 20px;
+            
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .label {
+            width: 15%;
+            box-sizing: border-box;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        #submit {
+            display: block;
+            padding: 10px 10px;
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            margin: 13px auto;
+            border-radius: 3px;
+            line-height: 18px;
+            font-size: large;
+        }
+        #submit:hover {
+            background-color: #45a049;
+        }
+        #resister div {
+            background-color:ivory;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .red{
+            border: 1px solid rgb(236, 64, 64);
+        }
+        .vali{
+            color: rgb(236, 64, 64);
+            box-sizing: border-box;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .displ{
+            display: inline-block;
+        }
+        .check{
+            color: #4caf50;
+            margin-left: 22px;
+        }
+        header{
+            padding: 20px;
+        }
+    </style>
+</head>    
+<body>
+<header>
+    <h1>회원 가입</h1>
+    <p>회원 가입을 위해서 당신의 몇가지 정보를 얻습니다.</p>
+    <p>We need your name and phone number, so we can call you in the next hour to confirm this and check you're happy to go ahead. After 1-pm, we'll call you back by 10am the next morning.</p>
+    <p>* 표시사항은 필수 입력사항 입니다.</p>
+</header>
+<section id="form">
+    <div>
+        <span class="label">성</span>
+        <input type="text" class="input" id="firstname" placeholder="성을 입력하세요">
+    </div>
+    <div>
+        <span class="label">이름</span>
+        <input type="text" class="input" id="lastname" placeholder="이름을 입력하세요">
+    </div>
+    <div>
+        <span class="label">*아이디</span>
+        <input type="text" class="input" id="id" placeholder="아이디를 입력하세요">
+        <span class="check" id="idCheck"></span>
+        <span class="vali" id="idVali"></span>
+        
+    </div>
+    <div>
+        <span class="label">*비밀번호</span>
+        <input type="password" class="input" id="password" placeholder="비밀번호를 입력하세요">  
+        <span class="check" id="pwCheck"></span>
+        <span class="vali" id="pwVali"></span>
+    </div>
+    <div>
+        <span class="label">*비밀번호 확인</span>
+        <input type="password" class="input" id="passwordtwo" placeholder="비밀번호를 입력하세요"> 
+        <span class="check"></span>
+        <span class="vali" id="pwVali2"></span>
+    </div>
+    <div>
+        <span class="label">*전화번호</span>
+        <input type="text" class="input, phone" placeholder="010" value="010" > - <input type="text" class="input, phone" id="firstphone" placeholder="****" > - <input type="text" class="input, phone" id="lastphone" placeholder="****" >
+        <span class="check" id="phoneCheck"></span>
+        <span class="vali" id="phoneVali"></span>
+    </div>
+    <div>
+        <span class="label">이메일</span>
+        <input type="text" class="input" id="email" placeholder="이메일을 입력하세요">
+    </div>
+    <div>
+        <span class="label">성별</span>
+        <label for="male">남</label>
+        <input type="radio"  id="male" name="gender" value="male">
+        <label for="female">여</label>
+        <input type="radio"  id="female" name="gender" value="female">    
+    </div>
+    <div>
+        <span class="label">거주 지역</span>
+        <select id="adress" class="input" >
+            <option value="서울시">서울시</option>
+            <option value="경기도">경기도</option>
+            <option value="강원도">강원도</option>
+            <option value="충청도">충청도</option>
+            <option value="경상도">경상도</option>
+            <option value="전라도">전라도</option>
+            <option value="제주도">제주도</option>
+        </select>
+    </div>
+    <div>
+        <button value="submit" id=submit>제출하기</button>
+    </div>
+</section>
+<section id="resister">
+</section>
+    <script src="validaition.js"></script>
+</body>
+
+</html>
