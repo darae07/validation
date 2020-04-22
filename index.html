@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>twittler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="data.js"></script>
+  <script src="https://kit.fontawesome.com/49746dcb37.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" type="text/css" media="screen" href="font-awesome.css" />
+</head>
+<body>
+  <!-- 여기에 HTML 구조를 작성하세요. 아래 코드는 예제이며, 얼마든지 바꿀 수 있습니다 -->
+  <div id="greeting">
+    <i class="fab fa-discourse"></i></i> twittler
+    <span><i class="fas fa-home"></i> <i class="fas fa-bell"></i></span>
+  </div>
+    
+  <div id="wrapper">
+    <div id="aside-left">
+      <div id="userinfo">
+        <div id="userback"></div>
+        <div id="userpic"><img src="userpic.jpg" width="130px" height="130px" alt="My Image" style="border-radius: 65px;"></div>
+        <div id="username">다래</div>
+        <div id="info">
+          <hr>
+          <div id="ininfo">
+            <div id="adress">거주지 : </div>
+            <div id="tel">전화번호 : </div>
+            <div id="mail">이메일 : </div>
+          </div>
+          <hr>
+          <div id="like">
+            <div id="save"><i class="far fa-bookmark"></i> 저장한 항목 </div>
+         </div>
+        </div>
+      </div>
+      <div id="group">
+        <div style="color: rgb(21, 103, 181);">그룹</div>
+        <div>이벤트</div>
+        <div style="color: rgb(21, 103, 181);">팔로우한 해시태그</div>
+        <hr>
+        <div id="more">더보기</div>
+      </div>
+    </div>
+    <div id ="section">
+      <div id="make-comment">
+        <div id="modalbtn"><i class="far fa-edit"></i> 글 올리기</div>
+      </div>
+      <div id="newTweet">
+        <button id="checknew"><i class="fas fa-sync-alt"></i></button>
+        <button id="back">back</button>
+      </div>
+      <hr style="border-top: 1px solid rgb(218, 217, 217);">
+      <div id="viewer">
+        <ul id="filtered-comments">
+        </ul>
+        <ul id="view-comments">
+        </ul>
+      </div>
+    </div>
+    <div id="aside-right">
+      <div id="aside-right-container">
+        <div class="right-inner"><i class="fas fa-search"></i> 오늘 친구들의 기분은 어떨까요?</div>
+        <div class="right-inner">이름을 눌러 확인해보세요</div>
+      <div id="sub"></div>
+      </div>
+      <div id="ourweb">회사소개 고객센터 개인정보 취급방침</div>
+      <span style="color: rgb(36, 173, 201);"><i class="fab fa-discourse"></i></span>
+      <span>twittler</span>
+      <span style="font-size: small;">twittler corporation &#169 2020년</span>
+    </div> 
+  </div>
+  
+  <div id="mymodal" class="modal">
+    <div class="modal-content">
+      <div>
+        <input type="text" id="content" placeholder="메시지를 입력하세요">
+      </div>
+      <button id="makenewtweet">tweet!</button>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

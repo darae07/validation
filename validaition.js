@@ -38,7 +38,7 @@ function resister(){
     parent.appendChild(div);
 }
 // 주소
-let adress;
+let adress='서울시';
 document.getElementById('adress').onchange = function(){
   let i= elselect.selectedIndex;
   adress=elselect.options[i].text;
@@ -62,6 +62,10 @@ function getInputValue(){
     console.log('거주 지역: ' + adress);
     
 }
+function formSubmit() {
+  location.href = "index.html"
+  }
+
 // 제출버튼클릭
 document.querySelector('#submit').onclick = function(){
   if(isValidId()){
@@ -76,6 +80,7 @@ document.querySelector('#submit').onclick = function(){
     document.querySelector("#phoneVali").innerHTML = '<i class="fas fa-times-circle"></i> 전화번호는 4자리 숫자입니다';
   }else{
     timeoutID = window.setTimeout(resister, 2000);
+    timeoutID = window.setTimeout(formSubmit, 5000);
     document.querySelector('#submit').innerHTML = '<i class="fa fa-spinner w3-spin""></i>';
     getInputValue();
     timeoutID = window.setTimeout(function(){
